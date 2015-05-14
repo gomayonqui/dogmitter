@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
+
+cd node_modules/hubot-tg && $TG_CLI/bin/telegram-cli -s hubot.lua -P 1123 -k $TG_CLI/tg-server.pub

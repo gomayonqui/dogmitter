@@ -1,0 +1,6 @@
+#!/bin/sh
+
+export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
+export TG_CLI=/home/kommitter/tg
+
+cd node_modules/hubot-tg && $TG_CLI/bin/telegram-cli -d -D -s hubot.lua -P 1123 -k $TG_CLI/tg-server.pub > hubot-tg.log 2>&1 &

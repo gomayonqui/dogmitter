@@ -1,0 +1,6 @@
+node_modules
+.DS_Store*
+.hubot_history
+lib/db/harvest_accounts.json
+config/deploy/production.rb
+config/deploy.rb
